@@ -206,5 +206,44 @@ class MainActivity : AppCompatActivity() {
 
         println(dayString)
 
+
+//  LOOPS
+
+    // FOR LOOPS
+
+
+        val myArrayNum = arrayOf(2,4,6,8,10,12,14,16,18,20)
+        val q = myArrayNum[0] / 2 + 1
+        println(q)
+
+        for (num in myArrayNum){
+            val nums = num / 2 + 1
+            println(nums)
+        }
+
+        for (ba in 0..8){
+            println(ba)
+        }
+
+        var myArrayListString = ArrayList<String>()
+        myArrayListString.add("Aliyev")
+        myArrayListString.add("Feat")
+        myArrayListString.add("All")
+
+        for (stringA in myArrayListString) {
+            println(stringA)
+        }
+
+        myArrayListString.forEach{println(it)}
+
+
+    //  While
+        var u = 0
+
+        while (u <= 8) {
+            println(u)
+            u = u + 2
+        }
+
     }
 }
